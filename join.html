@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Lonesome Guitarist Official Website</h1>
+            <span>
+                <a href="index.html" title="Home">Home</a>
+                <a href="about.html" title="About Me">About Me</a>
+                <a href="videos.html" title="My Videos">My Videos</a>
+                <a href="join.html">Join!</a>
+                <a href="https://www.youtube.com/channel/UCoSa883nNM_S79J6tD-OjfQ" target="_blank"
+                    title="Subscribe to my channel">Subscribe!</a>
+            </span>
+            <hr>
+        </header>
+
+        <main>
+            <!-- <h2>Join Me!</h2> -->
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="index.php" method="POST" class="join-form">
+                        <div>
+                            <label for="firstname" class="form-label">First Name:</label>
+                            <input required id="firstname" type="text" name="firstname" class="form-control firstname"
+                                placeholder="Frank"><br>
+                        </div>
+                        <div>
+                            <label for="lastname" class="form-label">Last Name:</label>
+                            <input required id="lastname" type="text" name="lastname" class="form-control lastname"
+                                placeholder="Isle"><br>
+                        </div>
+                        <div>
+                            <label for="number" class="form-label">Mobile:</label>
+                            <input required id="number" type="tel" name="number" class="form-control number"
+                                placeholder="5123456789"><br>
+                        </div>
+                        <div>
+                            <label for="username" class="form-label">Username:</label>
+                            <input required id="username" type="text" name="username" class="form-control username"
+                                placeholder="MIDExplorer"><br>
+                        </div>
+                        <div>
+                            <label for="email" class="form-label">Email:</label>
+                            <input required id="email" type="email" name="email" class="form-control email"
+                                placeholder="_____@___.com"><br>
+                        </div>
+                        <div>
+                            <label for="password" class="form-label">Create password:</label>
+                            <input required id="password" type="password" name="password" class="form-control password"
+                                minlength="6"><br>
+                        </div>
+                        <div>
+                            <label for="verify-password" class="form-label">Verify password:</label>
+                            <input required id="verify-password" type="password" class="form-control verify-password"
+                                name="verify_password" minlength="6"><br>
+                        </div>
+                        <div>
+                            <label for="bday" class="form-label">Birthdate:</label>
+                            <input required id="bday" type="date" name="birthday" class="form-control bday"><br>
+                        </div>
+                        <div>
+                            <label for="gender" class="form-label">Gender:</label>
+                            <label for="male" class="form-label">Male</label>
+                            <input required id="male" type="radio" class="male" value="male" name="gender">
+                            <label for="female" class="form-label">Female</label>
+                            <input required id="female" type="radio" class="female" value="female" name="gender">
+                            <br>
+                        </div>
+                        <div>
+                            <input required id="service" type="checkbox" name="service" class="service">
+                            <label for="service" class="form-label service-label">I have read the <a href="service.html"
+                                    target="_blank">terms
+                                    of
+                                    service</a>, I
+                                agree.</label><br>
+                            <input required id="privacy" type="checkbox" name="privacy" class="privacy">
+                            <label for="privacy" class="form-label privacy-label">I have read the <a href="privacy.html"
+                                    target="_blank">privacy
+                                    policy</a>, I
+                                agree.</label><br>
+                            <label for="file">Upload Image:</label><br>
+                            <input required id="file" type="file" name="image" class="form-control form-control-sm"><br>
+                        </div>
+                        <div>
+                            <input required type="submit">
+                            <input required type="reset">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="row d-flex flex-row-reverse justify-content-between">
+                        <div class="col-md-3">
+
+                            <div class="image-area">
+
+                            </div>
+                            <div class="input-area">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="json-result"></div>
+                            <div class="text-area">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <span>
+                author: Lonesome Guitarist (A.K.A. MIDExplorer)<br>
+                &copy; copyright reserved <br>
+                <a href="https://www.youtube.com/channel/UCoSa883nNM_S79J6tD-OjfQ" target="_blank">My YouTube
+                    Channel</a>
+                <a href="mailto:lonesome.guitarist.main@gmail.com" title="lonesome.guitarist.main@gmail.com">Mail Me</a>
+            </span>
+            <br><br>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/plugins/jquery-valitade/jquery.validate.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(".join-form").validate({
+            success: function (label) {
+                label.addClass("valid").text("Ok!")
+            },
+            submitHandler: function () { alert("Submitted!") },
+            rules: {
+                firstname: "required",
+                lastname: "required",
+                username: {
+                    required: true,
+                    minlength: 2,
+                },
+                number: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10,
+                },
+                password: {
+                    required: true,
+                    minlength: 6,
+                },
+                verify_password: {
+                    required: true,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true,
+                },
+                birthday: "required",
+                gender: "required",
+                service: "required",
+                privacy: "required",
+                image: "required",
+            },
+            messages: {
+                firstname: "Please enter your first name.",
+                lastname: "Please enter your last name.",
+                username: {
+                    required: "Please enter a username!",
+                    minlength: "Please enter at least 2 characters!",
+                },
+                number: {
+                    required: "Please enter your mobile number!",
+                    minlength: "Please enter a 10 character number!",
+                    maxlength: "Please enter a 10 character number!",
+                },
+                password: {
+                    required: "Please enter a strong password!",
+                    minlength: "Please enter at least 6 characters!",
+                },
+                verify_password: {
+                    required: "Please verify your password!",
+                    equalTo: "Please enter the same password!",
+                },
+                email: {
+                    required: "Please enter your email address!",
+                    email: "Please enter a valid email address!",
+                },
+                birthday: "Please enter your birthday!",
+                gender: "Please choose your gender!",
+                service: "Please accept our terms of service!",
+                privacy: "Please accept our privacy policy!",
+                image: "Please upload your photo!"
+            },
+            errorPlacement: function (error, element) {
+                // if (element.attr("type") == "radio") {
+                //     error.insertAfter("#female");
+                // } else {
+                //     error.insertAfter(element);
+                // }
+                if (element.attr("type") == "radio") {
+                    error.insertAfter("#female");
+                } else if (element.attr("type") == "checkbox") {
+                    if (element.attr("id") == "service") {
+                        error.insertAfter(".service-label")
+                    } else {
+                        error.insertAfter(".privacy-label")
+                    }
+                } else {
+                    error.insertAfter(element)
+                }
+
+
+                // switch (element.attr("type")) {
+                //     case "radio":
+                //         error.insertAfter("#female");
+                //     case "checkbox":
+                //         switch (element.attr("id")) 
+                // }
+
+            }
+        });
+        // $('input[name="password"]')
+    </script>
+</body>
+
+</html>
